@@ -1,0 +1,45 @@
+name
+email
+pasword
+###
+POST http://localhost:4000/user-api/register
+Content-Type: application/json
+
+{
+    "username":"sai",
+    "email":"sai@gmail.com",
+    "password":"1234"
+}
+###
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "username":"sai",
+    "password":"1234"
+}
+
+###
+POST http://localhost:4000/admin-api/login
+Content-Type: application/json
+
+{
+    "username":"Varshith",
+    "password":"1234"
+}
+
+###
+POST http://localhost:4000/admin-api/addCandidate
+Content-Type:application/json
+
+{
+    "candidateName":"Kaushik",
+    "party":"AE party",
+    "constituency":"Kadapa"
+}
+
+###
+GET http://localhost:4000/admin-api/getCandidates
+
+###
+GET http://localhost:4000/user-api/getUsers
